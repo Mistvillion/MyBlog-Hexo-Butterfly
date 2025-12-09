@@ -11,12 +11,9 @@ cover: /img/posts/DataStructures_and_Algorithm.jpg
 abbrlink: f0be246
 date: 2025-11-15 00:00:00
 updated: 2025-12-08 00:00:00
-keywords:
-top_img:
-mathjax:
-katex:
-aside:
-aplayer:
+toc:
+  enable: true
+  list_number: true
 ---
 
 本文囊括了一些最基础的数据结构与算法，此页为目录，详细介绍请看右侧边栏。
@@ -282,3 +279,14 @@ aplayer:
 * 贪心（Greedy）
 * 单调栈 / 单调队列
 
+<!-- 自定义 CSS：只在当前文章生效 -->
+<style>
+  /* Butterfly 主题 TOC 类名为 .toc-content */
+  /* 隐藏 3级 (H3) 及更深层级的所有目录项 */
+  .toc-content .toc-level-3,
+  .toc-content .toc-level-4,
+  .toc-content .toc-level-5,
+  .toc-content .toc-level-6 {
+      display: none !important;
+  }
+</style>
