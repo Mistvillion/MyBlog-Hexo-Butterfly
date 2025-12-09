@@ -96,6 +96,36 @@ toc:
   * 区间和、区间最值
   * 懒标记（Lazy Propagation）
 
+### 1.3 堆结构（Heaps）
+
+* **最大堆（Max-Heap）：** 每个父节点的值 ≥ 子节点的值
+* **最小堆（Min-Heap）：** 每个父节点的值 ≤ 子节点的值
+
+### 1.4 STL
+
+#### 序列式容器（Sequence Containers）
+* vector 动态数组
+* list 链表 / 双向链表
+* deque 双端队列
+* array 固定大小数组（很少用）
+* string 字符串（特殊的序列容器）
+
+#### 容器适配器（Container Adapters）
+* queue 队列
+* stack 栈
+* priority_queue 优先队列（大根堆）
+
+#### 关联式容器（Ordered Associative Containers）
+* set 集合
+* multiset 多重集合
+* map 键值映射
+* multimap 可重复键
+
+#### 无序容器（Unordered Containers）
+* unordered_set 哈希集合
+* unordered_multiset 可重复集合
+* unordered_map 哈希键值映射
+* unordered_multimap 可重复键
 ---
 
 ## 2. 数学与数论（Math & Number Theory）
@@ -151,8 +181,6 @@ toc:
 * 有向图 / 无向图
 * 带权图 / 不带权图
 
----
-
 ### 4.2 图的遍历（基础）
 
 * 深度优先搜索（DFS）
@@ -161,8 +189,6 @@ toc:
 * 拓扑排序
   * Kahn 算法（BFS）
   * DFS 版本（逆后序输出）
-
----
 
 ### 4.3 最小生成树（MST）
 
@@ -174,8 +200,6 @@ toc:
 
   * 适用稀疏图 / 边集
   * 并查集判断成环
-
----
 
 ### 4.4 最短路径（Shortest Path）
 
@@ -196,22 +220,16 @@ toc:
 
 * Johnson 算法（Bellman-Ford + Dijkstra）
 
----
-
 ### 4.5 强连通分量（SCC）
 
 * **Tarjan 算法**（基于 DFS）
 * **Kosaraju 算法**（两次 DFS）
-
----
 
 ### 4.6 无向图中特殊点与边
 
 * 割点（Articulation Points）
 * 桥 / 割边（Bridges）
 * 双连通分量（BCC）
-
----
 
 ### 4.7 网络流（高级）
 
@@ -278,6 +296,7 @@ toc:
 * 分治（Divide & Conquer）
 * 贪心（Greedy）
 * 单调栈 / 单调队列
+* 最小栈 / 最小队列
 
 <!-- 自定义 CSS：只在当前文章生效 -->
 <style>
