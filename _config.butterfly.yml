@@ -21,6 +21,7 @@ menu:
   首页: / || fas fa-home 
   分类: /categories/ || fas fa-th-large
   留言板: /comments/ || fas fa-envelope-open
+  项目: /projects/ || fas fa-project-diagram
   列表||fas fa-list:
     音乐: /music/ || fas fa-music
     电影: /movies/ || fas fa-video

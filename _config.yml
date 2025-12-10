@@ -148,7 +148,7 @@ magnet:
   devide: 2
   display:
     - name: Prepare
-      display_name: Hexo&Butterfly
+      display_name: 准备工作
       icon: 📚
     - name: Entertainment
       display_name: 瞬息欢愉

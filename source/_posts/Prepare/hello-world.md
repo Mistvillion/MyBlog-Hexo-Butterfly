@@ -4,7 +4,7 @@ categories:
   - Prepare
   - hello_world
 comments: true
-description: Hexo官方文档，用于测试
+description: Hexo官方文档
 swiper_index: 4
 cover: /img/posts/hello_world.jpg
 abbrlink: 4a17b156

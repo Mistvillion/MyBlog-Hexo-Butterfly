@@ -14,6 +14,8 @@ updated: 2025-11-18 00:00:00
 
 ## 📘 写博客标准流程（Hexo + Butterfly + abbrlink + GitHub 双仓库）
 
+本文由 ChatGPT 5.1 生成
+
 > **作者：silentnight-sparklerain**
 > **博客框架：Hexo + Butterfly**
 > **源码仓库：MyBlog-Hexo-Butterfly**
