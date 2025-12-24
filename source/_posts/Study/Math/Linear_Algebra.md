@@ -22,6 +22,8 @@ aplayer:
 
 笔记是根据MIT18.06线性代数课程所记，若要了解更多详情，请参考Gilbert Strang教授的《线性代数导论》教材与网课[MIT 18.06](https://www.bilibili.com/video/BV1rH4y1N7BW/?spm_id_from=333.1007.top_right_bar_window_custom_collection.content.click&vd_source=9c38c1da8942e504cacc7af7904ed6a4)
 
+![线性代数](/img/post_article/线性代数/线性代数.avif)
+
 ## 第1章 向量导论
 
 **1. 向量的点积（内积）**

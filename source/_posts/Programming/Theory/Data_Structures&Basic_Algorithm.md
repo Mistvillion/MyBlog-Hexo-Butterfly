@@ -5,11 +5,11 @@ categories:
   - Theory
 comments: true
 description: 数据结构（线性结构、栈、队列、并查集、树、图、哈希表）与基础算法（基础思维与技巧、排序与查找、图论、动态规划、字符串算法、数论）
+series: 数据结构与基础算法
 highlight_shrink: true
-swiper_index: 1
 cover: /img/posts/DataStructures_and_Algorithm.jpg
 abbrlink: f0be246
-date: 2025-11-15 00:00:00
+date: 2025-12-08 00:00:00
 updated: 2025-12-08 00:00:00
 toc:
   enable: true
@@ -41,15 +41,11 @@ toc:
 * 二叉搜索树、平衡树（概念）
 * 树状数组 / 线段树
 * 拓扑排序（Kahn + DFS）
-* 强连通分量：Tarjan / Kosaraju
-* Bellman-Ford / SPFA
-* 多源最短路径：Floyd-Warshall
 * 区间 DP、树形 DP、状态压缩 DP
 * KMP、Manacher
 
 ### 阶段三：高级算法（挑战）
 
-* 网络流（Dinic、ISAP、费用流）
 * LCA（倍增 / Tarjan）
 * 树链剖分（HLD）
 * AC 自动机
@@ -107,6 +103,7 @@ toc:
 #### 迭代器（Iterator）
 
 #### 序列式容器（Sequence Containers）
+
 * vector 动态数组
 * list 链表 / 双向链表
 * deque 双端队列
@@ -114,21 +111,25 @@ toc:
 * string 字符串（特殊的序列容器）
 
 #### 容器适配器（Container Adapters）
+
 * queue 队列
 * stack 栈
 * priority_queue 优先队列（大根堆）
 
 #### 关联式容器（Ordered Associative Containers）
+
 * set 集合
 * multiset 多重集合
 * map 键值映射
 * multimap 可重复键
 
 #### 无序容器（Unordered Containers）
+
 * unordered_set 哈希集合
 * unordered_multiset 可重复集合
 * unordered_map 哈希键值映射
 * unordered_multimap 可重复键
+
 ---
 
 ## 2. 数学与数论（Math & Number Theory）
@@ -192,6 +193,7 @@ toc:
 * 拓扑排序
   * Kahn 算法（BFS）
   * DFS 版本（逆后序输出）
+* 关键路径
 
 ### 4.3 最小生成树（MST）
 
@@ -222,23 +224,6 @@ toc:
 #### 所有点对最短路（稀疏图）
 
 * Johnson 算法（Bellman-Ford + Dijkstra）
-
-### 4.5 强连通分量（SCC）
-
-* **Tarjan 算法**（基于 DFS）
-* **Kosaraju 算法**（两次 DFS）
-
-### 4.6 无向图中特殊点与边
-
-* 割点（Articulation Points）
-* 桥 / 割边（Bridges）
-* 双连通分量（BCC）
-
-### 4.7 网络流（高级）
-
-* Dinic（分层图）
-* ISAP（当前弧优化）
-* 最小费用最大流（SPFA + 费用）
 
 ---
 

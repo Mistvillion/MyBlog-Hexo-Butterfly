@@ -12,8 +12,8 @@ katex: true
 highlight_shrink: true
 cover: /img/posts/离散数学.avif
 abbrlink: 7b8d8b78
-date: 2025-11-27 00:00:00
-updated: 2025-11-27 00:00:00
+date: 2025-11-28 00:00:00
+updated: 2025-11-28 00:00:00
 keywords:
 top_img:
 aside:

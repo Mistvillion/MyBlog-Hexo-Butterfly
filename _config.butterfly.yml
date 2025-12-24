@@ -20,12 +20,12 @@ nav:
 menu:
   首页: / || fas fa-home 
   分类: /categories/ || fas fa-th-large
-  工具: /tools/ || fas fa-cogs
-  项目: /projects/ || fas fa-project-diagram
   关于: /about/ || fas fa-info-circle
   友链: /links/ || fas fa-link
   留言板: /comments/ || fas fa-envelope-open
   列表||fas fa-list:
+    工具: /tools/ || fas fa-cogs
+    项目: /projects/ || fas fa-project-diagram
     音乐: /music/ || fas fa-music
     电影: /movies/ || fas fa-video
 
