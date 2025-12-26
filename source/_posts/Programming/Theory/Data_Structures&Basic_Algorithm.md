@@ -4,7 +4,7 @@ categories:
   - Programming
   - Theory
 comments: true
-description: 数据结构（线性结构、栈、队列、并查集、树、图、哈希表）与基础算法（基础思维与技巧、排序与查找、图论、动态规划、字符串算法、数论）
+description: 常用数据结构与排序查找算法
 series: 数据结构与基础算法
 highlight_shrink: true
 cover: /img/posts/DataStructures_and_Algorithm.jpg
@@ -22,269 +22,123 @@ toc:
 
 ---
 
-## 0.建议的学习路线
+## 1. 绪论（Introduction）
 
-### 阶段一：必须掌握（基础）
-
-* 数组、字符串、链表
-* 栈 / 队列 / 双端队列
-* 哈希表（unordered_map / unordered_set）
-* 二叉树遍历（递归/非递归）
-* 堆（priority_queue）
-* 图：DFS / BFS
-* 最短路：Dijkstra（非负权）
-* 最小生成树：Prim / Kruskal
-* 基本 DP（背包、LCS）
-
-### 阶段二：提升能力（进阶）
-
-* 二叉搜索树、平衡树（概念）
-* 树状数组 / 线段树
-* 拓扑排序（Kahn + DFS）
-* 区间 DP、树形 DP、状态压缩 DP
-* KMP、Manacher
-
-### 阶段三：高级算法（挑战）
-
-* LCA（倍增 / Tarjan）
-* 树链剖分（HLD）
-* AC 自动机
-* DP 优化（斜率优化、四边形不等式）
-* 数论进阶（逆元、CRT、筛法优化）
+* **算法复杂度分析 (Complexity Analysis)**
+* 时间复杂度 (Time Complexity) —— , , 
+* 空间复杂度 (Space Complexity)
 
 ---
 
-## 1. 数据结构（Data Structures）
+## 2. 线性结构（Linear Structures）
 
-### 1.1 线性结构（Linear Structures）
+### 2.1 线性表 (Linear Lists)
 
-* 数组（Array）
-* 字符串（String）
-* 链表（Linked List）
-* 栈（Stack）
-* 队列（Queue）
-* 双端队列（Deque）
-* **哈希表（Hash Table）**
+* **顺序表 (Sequential List)**
+* **单链表 (Singly Linked List)**
+* **双向链表 (Doubly Linked List)**
+* **循环链表 (Circular Linked List)**
+* **静态链表 (Static Linked List)** 
 
-  * unordered_map
-  * unordered_set
-  * 哈希冲突处理：链式/开放地址
+### 2.2 栈、队列、数组 (Stacks, Queues and Arrays)
 
-### 1.2 树结构（Trees）
+* **栈 (Stack)**：顺序栈、链栈、共享栈
+* **队列 (Queue)**：循环队列 (Circular Queue)、链式队列
+* **双端队列 (Deque)**：输入/输出受限的双端队列
+* **数组与特殊矩阵 (Arrays and Special Matrices)**
+* 数组的存储 (Row/Column Major Order)
+* 对称矩阵的压缩存储 (Symmetric Matrix Compression)
+* 三角矩阵/对角矩阵 (Triangular/Diagonal Matrix)
+* 稀疏矩阵 (Sparse Matrix)：三元组、十字链表
 
-#### 基础树（Basic Trees）
+### 2.3 串 (Strings)
 
-* 二叉树（Binary Tree）
-* 二叉搜索树（BST）
-* 树的遍历：先序/中序/后序/层序
-
-#### 高级树（Advanced Trees）
-
-* AVL 树（概念）
-* 红黑树（概念）
-* Trie 字典树
-* 并查集（Union-Find）
-
-#### 区间结构
-
-* 树状数组（Fenwick Tree）
-* 线段树（Segment Tree）
-
-  * 区间和、区间最值
-  * 懒标记（Lazy Propagation）
-
-### 1.3 堆结构（Heaps）
-
-* **最大堆（Max-Heap）：** 每个父节点的值 ≥ 子节点的值
-* **最小堆（Min-Heap）：** 每个父节点的值 ≤ 子节点的值
-
-### 1.4 STL
-
-#### 迭代器（Iterator）
-
-#### 序列式容器（Sequence Containers）
-
-* vector 动态数组
-* list 链表 / 双向链表
-* deque 双端队列
-* array 固定大小数组（很少用）
-* string 字符串（特殊的序列容器）
-
-#### 容器适配器（Container Adapters）
-
-* queue 队列
-* stack 栈
-* priority_queue 优先队列（大根堆）
-
-#### 关联式容器（Ordered Associative Containers）
-
-* set 集合
-* multiset 多重集合
-* map 键值映射
-* multimap 可重复键
-
-#### 无序容器（Unordered Containers）
-
-* unordered_set 哈希集合
-* unordered_multiset 可重复集合
-* unordered_map 哈希键值映射
-* unordered_multimap 可重复键
+* **字符串基本操作 (Basic String Operations)**
+* **模式匹配 (Pattern Matching)**
+* 朴素模式匹配算法 (Brute-Force)
+* **KMP算法 (Knuth-Morris-Pratt)**
+* KMP算法优化 (Modified KMP / nextval)
 
 ---
 
-## 2. 数学与数论（Math & Number Theory）
+## 3. 树结构（Trees）
 
-### 2.1 基础
+### 3.1 树与二叉树 (Trees and Binary Trees)
 
-* 最大公约数 GCD（欧几里得算法）
-* 最小公倍数 LCM
-* 快速幂（快速指数）
-* 排列组合
+* **二叉树 (Binary Tree)**：完全二叉树 (Complete BT)、满二叉树 (Full BT)
+* **遍历 (Traversal)**：先序、中序、后序、层序 (Level Order)
+* **线索二叉树 (Threaded Binary Tree)**
+* **树、森林与二叉树的转换 (Conversion between Trees, Forests and Binary Trees)**
+* **哈夫曼树 (Huffman Tree)** 与哈夫曼编码 (Huffman Coding)
+* **并查集 (Disjoint Set Union - DSU)**：合并与路径压缩 (Path Compression)
 
-### 2.2 数论进阶
+### 3.2 图 (Graphs)
 
-* 质数判断：试除 / Miller–Rabin
-* 欧拉函数 φ(n)
-* 线性筛（Euler sieve）
-* 模运算（加减乘幂取模）
-* 逆元
-
-  * 扩展欧几里得
-  * 费马小定理（mod 为质数）
-* 中国剩余定理（CRT）
-* Lucas 定理
+* **图的存储 (Graph Storage)**
+* **图的遍历 (Graph Traversal)**：DFS (Depth First Search) 与 BFS (Breadth First Search)
+* **最小生成树 (Minimum Spanning Tree - MST)**
+* **最短路径 (Shortest Path)**
+* **拓扑排序 (Topological Sort)** —— AOV网
+* **关键路径 (Critical Path Method - CPM)** —— AOE网
 
 ---
 
-## 3. 排序 & 查找（Sorting & Searching）
+## 4. 查找与排序（Searching & Sorting）
 
-### 3.1 排序
+### 4.1 查找 (Searching)
 
-* 冒泡 / 插入 / 选择（基础）
-* 快速排序（重点）
-* 归并排序（重点）
-* 堆排序（理解 + 应用）
-* 桶排序 / 基数排序（大数据场景）
+* **线性查找 (Linear Search) 与 折半查找 (Binary Search)**
+* **树形查找 (Tree-based Search)**
+* **B树与B+树 (B-Tree and B+ Tree)** 
+* **散列表 (Hash Table)**：散列函数、处理冲突的方法
 
-### 3.2 查找
+### 4.2 排序 (Sorting)
 
-* 二分查找
-
-  * 标准版
-  * 左边界 / 右边界
-* 二分答案（Binary Search on Answer）
-
----
-
-## 4. 图论（Graph Theory）
-
-### 4.1 图的基本表示
-
-* 邻接表（Adjacency List）
-* 邻接矩阵（Adjacency Matrix）
-* 有向图 / 无向图
-* 带权图 / 不带权图
-
-### 4.2 图的遍历（基础）
-
-* 深度优先搜索（DFS）
-* 广度优先搜索（BFS）
-* 连通性判定
-* 拓扑排序
-  * Kahn 算法（BFS）
-  * DFS 版本（逆后序输出）
-* 关键路径
-
-### 4.3 最小生成树（MST）
-
-* **Prim 算法**
-
-  * 适用稠密图 / 邻接矩阵
-  * Dijkstra 类似思想
-* **Kruskal 算法**
-
-  * 适用稀疏图 / 边集
-  * 并查集判断成环
-
-### 4.4 最短路径（Shortest Path）
-
-#### 单源最短路
-
-* **Dijkstra（非负边）**
-
-  * 邻接表：O((V+E)logV)
-  * 邻接矩阵：O(V²)
-* Bellman-Ford（可负权）
-* SPFA（Bellman-Ford 的优化）
-
-#### 多源最短路
-
-* Floyd–Warshall（O(V³)）
-
-#### 所有点对最短路（稀疏图）
-
-* Johnson 算法（Bellman-Ford + Dijkstra）
+* **插入排序 (Insertion Sort)**：直接插入、折半插入、希尔排序 (Shell Sort)
+* **交换排序 (Swap Sort)**：冒泡排序 (Bubble Sort)、**快速排序 (Quick Sort)**
+* **选择排序 (Selection Sort)**：简单选择排序、**堆排序 (Heap Sort)**
+* **归并排序 (Merge Sort)**
+* **分配类排序**：基数排序 (Radix Sort)、计数排序 (Counting Sort)
+* **外部排序 (External Sorting)**：多路平衡归并、置换-选择排序、最佳归并树
 
 ---
 
-## 5. 字符串算法（String Algorithms）
+## 5. C++ STL 标准模板库
 
-### 5.1 模式匹配
+### 5.1 迭代器 (Iterator)
 
-* KMP（重点）
-* Sunday 算法
-* Rabin–Karp
+### 5.2 序列式容器 (Sequence Containers)
 
-### 5.2 高级字符串算法
+* `vector` (Dynamic Array)
+* `list` (Doubly Linked List)
+* `deque` (Double-ended Queue)
+* `array` (Fixed-size Array)
+* `string` (String Class)
 
-* 最长回文子串：Manacher 算法
-* 后缀数组（SA）
-* Trie 树
-* AC 自动机（多模匹配）
+### 5.3 容器适配器 (Container Adapters)
 
----
+* `stack` (Stack)
+* `queue` (Queue)
+* `priority_queue` (Priority Queue / Max Heap)
 
-## 6. 动态规划（Dynamic Programming）
+### 5.4 关联式/无序容器 (Associative & Unordered Containers)
 
-### 6.1 基础 DP
-
-* 斐波那契（递推）
-* 背包 DP（0/1、完全、多重）
-* LIS（最长上升子序列）
-* LCS（最长公共子序列）
-
-### 6.2 区间 DP
-
-* 石子合并
-* 矩阵链乘法
-
-### 6.3 树形 DP
-
-* 树上路径
-* 子树信息 DP
-
-### 6.4 状态压缩 DP
-
-* 集合 DP（TSP 类）
-* 子集枚举
-
-### 6.5 DP 优化（进阶）
-
-* 斜率优化（Convex Hull Trick）
-* 四边形不等式优化
-* Knuth 优化
+* `set` / `multiset` (Red-Black Tree based)
+* `map` / `multimap` (Key-Value pairs)
+* `unordered_set` / `unordered_map` (Hash Table based)
 
 ---
 
-## 7. 混合技巧（Hybrid Techniques）
+## 6. 算法进阶与技巧（Advanced Techniques）
 
-* 双指针（Two Pointers）
-* 滑动窗口（Sliding Window）
-* 区间合并
-* 分治（Divide & Conquer）
-* 贪心（Greedy）
-* 单调栈 / 单调队列
-* 最小栈 / 最小队列
+* **双指针 (Two Pointers)**
+* **滑动窗口 (Sliding Window)**
+* **区间合并 (Interval Merging)**
+* **分治 (Divide & Conquer)**
+* **贪心 (Greedy Algorithm)**
+* **动态规划 (Dynamic Programming)** 
+* **单调栈 / 单调队列 (Monotonic Stack / Queue)**
+* **位运算 (Bit Manipulation)**
 
 <!-- 自定义 CSS：只在当前文章生效 -->
 <style>
