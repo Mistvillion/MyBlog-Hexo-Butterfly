@@ -113,7 +113,7 @@ search:
 ## Docs: https://hexo.io/docs/one-command-deployment
 deploy:
   type: git
-  repository: https://github.com/silentnight-sparklerain/silentnight-sparklerain.github.io.git
+  repository: https://github.com/Mistvillion/Mistvillion.github.io.git
   branch: main
 
 
